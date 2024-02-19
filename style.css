@@ -1,0 +1,107 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 65%;
+  margin: auto;
+  border-radius: 1rem;
+
+  margin-top: 5%;
+}
+.card {
+  /* height: 5rem; */
+  /* border: 1px solid black; */
+  padding: 2rem;
+}
+
+#card1 {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+#card2 {
+  background-color: hsl(184, 100%, 22%);
+}
+#card3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+#card1 button {
+  color: hsl(31, 77%, 52%);
+}
+#card2 button {
+  color: hsl(184, 100%, 22%);
+}
+#card3 button {
+  color: hsl(179, 100%, 13%);
+}
+
+#card1 button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+#card2 button:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+}
+#card3 button:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+}
+
+.learn-more-btn:hover {
+  border: 0.1rem solid hsl(0, 0%, 95%);
+  padding: 0.8rem 1.8rem;
+}
+.card button {
+  outline: none;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-family: "Lexend Deca";
+}
+h1 {
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+}
+p {
+  font-family: "Lexend Deca";
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media (max-width: 700px) {
+  .grid-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .card button {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  #card1 {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  #card3 {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}
